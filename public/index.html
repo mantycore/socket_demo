@@ -1,0 +1,8 @@
+<script src="socket.io.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.0.1/Rx.min.js"></script>
+<script>
+var socket = io('http://localhost:3000');
+Rx.Observable.fromEvent(document, 'mousemove').throttleTime(100).subscribe(function (e) {
+	socket.emit("data", {x: e.screenX, y: e.screenY});
+});
+</script>

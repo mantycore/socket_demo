@@ -1,0 +1,15 @@
+{
+  "name": "socket_demo",
+  "version": "0.1.0",
+  "description": "An example module to illustrate the usage of socket.io",
+  "author": "Mantycore <mantycore@google.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.0",
+    "socket.io": "^1.7.3"
+  },
+  "repository": {
+  	"type": "git",
+  	"url": "https//github.com/mantycore/socket_demo"
+  }
+}
