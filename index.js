@@ -5,7 +5,7 @@ var io = require('socket.io')(server);
 
 app.use(express.static('public'));
 
-pool = [];
+var pool = [];
 function getFree() {
 	var i = pool.indexOf(null);
 	return i !== -1 ? i : pool.length;
